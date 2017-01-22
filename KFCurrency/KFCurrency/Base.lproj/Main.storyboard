@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LgO-79-w8J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--今日外汇牌价-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="quotationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="货币名称：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYE-Gb-T1t">
+                                <rect key="frame" x="36" y="84" width="131" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ie-Ql-zpS">
+                                <rect key="frame" x="175" y="84" width="164" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="点击选择"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现钞买入价：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDI-mi-Ibr">
+                                <rect key="frame" x="36" y="184" width="131" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGT-4E-86X">
+                                <rect key="frame" x="175" y="184" width="164" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现汇卖出价：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2H-PI-Ucv">
+                                <rect key="frame" x="36" y="226" width="131" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3t-ck-kMs">
+                                <rect key="frame" x="175" y="226" width="164" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现钞卖出价：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U35-wV-bMj">
+                                <rect key="frame" x="36" y="268" width="131" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXZ-bQ-oGY">
+                                <rect key="frame" x="175" y="268" width="164" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中间价：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tou-PJ-b6u">
+                                <rect key="frame" x="36" y="310" width="131" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xq-5q-bvx">
+                                <rect key="frame" x="175" y="310" width="164" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现汇买入价：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-fO-Aec">
+                                <rect key="frame" x="36" y="142" width="131" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-v5-QDh">
+                                <rect key="frame" x="175" y="142" width="164" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkN-Hl-xmz">
+                                <rect key="frame" x="0.0" y="543" width="375" height="38"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="WFM-fP-OGD"/>
+                                    <constraint firstAttribute="width" secondItem="FkN-Hl-xmz" secondAttribute="height" multiplier="375:38" id="vHT-e2-B0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvR-XI-RbO">
+                                <rect key="frame" x="111" y="428" width="113" height="30"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="中国银行">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zcb-fO-Aec" firstAttribute="centerY" secondItem="vJm-v5-QDh" secondAttribute="centerY" id="0tB-nX-1nb"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="37S-Nf-ugr"/>
+                            <constraint firstItem="JXZ-bQ-oGY" firstAttribute="width" secondItem="2Xq-5q-bvx" secondAttribute="width" id="3Bo-ep-KA7"/>
+                            <constraint firstItem="U2H-PI-Ucv" firstAttribute="height" secondItem="U35-wV-bMj" secondAttribute="height" id="4qd-8z-RvJ"/>
+                            <constraint firstItem="zcb-fO-Aec" firstAttribute="centerX" secondItem="XDI-mi-Ibr" secondAttribute="centerX" id="5AW-ZB-5UI"/>
+                            <constraint firstItem="Tou-PJ-b6u" firstAttribute="top" secondItem="U35-wV-bMj" secondAttribute="bottom" constant="8" id="6oS-1k-vFn"/>
+                            <constraint firstItem="TGT-4E-86X" firstAttribute="width" secondItem="w3t-ck-kMs" secondAttribute="width" id="77o-S0-JdT"/>
+                            <constraint firstItem="Tou-PJ-b6u" firstAttribute="centerY" secondItem="2Xq-5q-bvx" secondAttribute="centerY" id="8H5-gj-IFW"/>
+                            <constraint firstItem="2Xq-5q-bvx" firstAttribute="leading" secondItem="Tou-PJ-b6u" secondAttribute="trailing" constant="8" id="9dT-Fz-6Uz"/>
+                            <constraint firstItem="U2H-PI-Ucv" firstAttribute="centerY" secondItem="w3t-ck-kMs" secondAttribute="centerY" id="9xK-mT-cHY"/>
+                            <constraint firstItem="XDI-mi-Ibr" firstAttribute="top" secondItem="zcb-fO-Aec" secondAttribute="bottom" constant="8" id="A89-oD-d0m"/>
+                            <constraint firstItem="JXZ-bQ-oGY" firstAttribute="centerX" secondItem="2Xq-5q-bvx" secondAttribute="centerX" id="AhX-Id-64G"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="width" secondItem="0ie-Ql-zpS" secondAttribute="width" multiplier="4:5" id="CVV-lj-zzX"/>
+                            <constraint firstItem="JXZ-bQ-oGY" firstAttribute="top" secondItem="w3t-ck-kMs" secondAttribute="bottom" constant="8" id="DAT-0N-qvI"/>
+                            <constraint firstItem="zcb-fO-Aec" firstAttribute="height" secondItem="vJm-v5-QDh" secondAttribute="height" id="FnR-KB-Vpy"/>
+                            <constraint firstItem="U35-wV-bMj" firstAttribute="centerY" secondItem="JXZ-bQ-oGY" secondAttribute="centerY" id="GRv-1d-LKN"/>
+                            <constraint firstItem="U2H-PI-Ucv" firstAttribute="top" secondItem="XDI-mi-Ibr" secondAttribute="bottom" constant="8" id="HyC-fw-ydK"/>
+                            <constraint firstAttribute="trailing" secondItem="FkN-Hl-xmz" secondAttribute="trailing" id="JfM-RM-kAr"/>
+                            <constraint firstItem="FkN-Hl-xmz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O4N-8C-8by"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="height" secondItem="0ie-Ql-zpS" secondAttribute="height" id="OBH-rO-IYt"/>
+                            <constraint firstItem="2Xq-5q-bvx" firstAttribute="top" secondItem="JXZ-bQ-oGY" secondAttribute="bottom" constant="8" id="P9b-5F-o7u"/>
+                            <constraint firstItem="Tou-PJ-b6u" firstAttribute="height" secondItem="2Xq-5q-bvx" secondAttribute="height" id="PWm-Fq-VPk"/>
+                            <constraint firstItem="TGT-4E-86X" firstAttribute="centerX" secondItem="w3t-ck-kMs" secondAttribute="centerX" id="PlD-pD-ygW"/>
+                            <constraint firstItem="0ie-Ql-zpS" firstAttribute="centerX" secondItem="vJm-v5-QDh" secondAttribute="centerX" id="QHf-0K-jJk"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="centerX" secondItem="zcb-fO-Aec" secondAttribute="centerX" id="RcS-PA-s3T"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="TAz-7P-AE3"/>
+                            <constraint firstItem="U2H-PI-Ucv" firstAttribute="centerX" secondItem="U35-wV-bMj" secondAttribute="centerX" id="TBZ-a7-oSd"/>
+                            <constraint firstItem="w3t-ck-kMs" firstAttribute="width" secondItem="JXZ-bQ-oGY" secondAttribute="width" id="TQl-4t-vOC"/>
+                            <constraint firstItem="dvR-XI-RbO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TjN-OZ-3hZ"/>
+                            <constraint firstItem="zcb-fO-Aec" firstAttribute="top" secondItem="zYE-Gb-T1t" secondAttribute="bottom" constant="24" id="UiA-HX-HXT"/>
+                            <constraint firstItem="XDI-mi-Ibr" firstAttribute="centerY" secondItem="TGT-4E-86X" secondAttribute="centerY" id="VpI-Od-R1O"/>
+                            <constraint firstItem="0ie-Ql-zpS" firstAttribute="width" secondItem="vJm-v5-QDh" secondAttribute="width" id="VsF-Ft-FDC"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="height" secondItem="zcb-fO-Aec" secondAttribute="height" id="YTe-Jh-2wT"/>
+                            <constraint firstItem="0ie-Ql-zpS" firstAttribute="leading" secondItem="zYE-Gb-T1t" secondAttribute="trailing" constant="8" id="ZEf-De-fBU"/>
+                            <constraint firstItem="vJm-v5-QDh" firstAttribute="top" secondItem="0ie-Ql-zpS" secondAttribute="bottom" constant="24" id="aXo-uY-jsr"/>
+                            <constraint firstItem="dvR-XI-RbO" firstAttribute="height" secondItem="2Xq-5q-bvx" secondAttribute="height" id="b0Y-8d-8aP"/>
+                            <constraint firstItem="FkN-Hl-xmz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c4X-mH-KpQ"/>
+                            <constraint firstItem="U35-wV-bMj" firstAttribute="height" secondItem="JXZ-bQ-oGY" secondAttribute="height" id="cTc-ah-v8e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ie-Ql-zpS" secondAttribute="trailing" constant="20" id="cdb-A9-U5h"/>
+                            <constraint firstItem="TGT-4E-86X" firstAttribute="top" secondItem="vJm-v5-QDh" secondAttribute="bottom" constant="8" id="dES-zH-2Lk"/>
+                            <constraint firstItem="U2H-PI-Ucv" firstAttribute="height" secondItem="w3t-ck-kMs" secondAttribute="height" id="eK0-Cg-rJ8"/>
+                            <constraint firstItem="vJm-v5-QDh" firstAttribute="centerX" secondItem="TGT-4E-86X" secondAttribute="centerX" id="el6-EB-iwf"/>
+                            <constraint firstItem="zYE-Gb-T1t" firstAttribute="centerY" secondItem="0ie-Ql-zpS" secondAttribute="centerY" id="ez1-i9-Vh1"/>
+                            <constraint firstItem="zcb-fO-Aec" firstAttribute="height" secondItem="XDI-mi-Ibr" secondAttribute="height" id="fgk-vC-VQu"/>
+                            <constraint firstItem="XDI-mi-Ibr" firstAttribute="height" secondItem="U2H-PI-Ucv" secondAttribute="height" id="gHI-oB-iaI"/>
+                            <constraint firstItem="dvR-XI-RbO" firstAttribute="width" secondItem="2Xq-5q-bvx" secondAttribute="width" id="hXM-Tm-17O"/>
+                            <constraint firstItem="vJm-v5-QDh" firstAttribute="width" secondItem="TGT-4E-86X" secondAttribute="width" id="hgD-eI-UEq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FkN-Hl-xmz" secondAttribute="bottom" constant="37" id="i7i-xR-oos"/>
+                            <constraint firstItem="w3t-ck-kMs" firstAttribute="leading" secondItem="U2H-PI-Ucv" secondAttribute="trailing" constant="8" id="iqH-c7-bmF"/>
+                            <constraint firstItem="U35-wV-bMj" firstAttribute="centerX" secondItem="Tou-PJ-b6u" secondAttribute="centerX" id="j9K-wj-t0m"/>
+                            <constraint firstItem="XDI-mi-Ibr" firstAttribute="centerX" secondItem="U2H-PI-Ucv" secondAttribute="centerX" id="mgn-Nn-RDM"/>
+                            <constraint firstItem="XDI-mi-Ibr" firstAttribute="height" secondItem="TGT-4E-86X" secondAttribute="height" id="mxw-EG-VZf"/>
+                            <constraint firstItem="dvR-XI-RbO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2Xq-5q-bvx" secondAttribute="bottom" constant="8" id="nGG-ep-wvo"/>
+                            <constraint firstItem="U35-wV-bMj" firstAttribute="height" secondItem="Tou-PJ-b6u" secondAttribute="height" id="nq9-r3-dOc"/>
+                            <constraint firstItem="FkN-Hl-xmz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dvR-XI-RbO" secondAttribute="bottom" constant="8" id="qN5-Nk-zmM"/>
+                            <constraint firstItem="w3t-ck-kMs" firstAttribute="centerX" secondItem="JXZ-bQ-oGY" secondAttribute="centerX" id="rSe-hu-Op8"/>
+                            <constraint firstItem="JXZ-bQ-oGY" firstAttribute="leading" secondItem="U35-wV-bMj" secondAttribute="trailing" constant="8" id="rwl-3v-obz"/>
+                            <constraint firstItem="U35-wV-bMj" firstAttribute="top" secondItem="U2H-PI-Ucv" secondAttribute="bottom" constant="8" id="sg8-sa-QNX"/>
+                            <constraint firstItem="TGT-4E-86X" firstAttribute="leading" secondItem="XDI-mi-Ibr" secondAttribute="trailing" constant="8" id="tKR-44-gWd"/>
+                            <constraint firstAttribute="trailing" secondItem="FkN-Hl-xmz" secondAttribute="trailing" id="vhg-d3-Xpu"/>
+                            <constraint firstItem="w3t-ck-kMs" firstAttribute="top" secondItem="TGT-4E-86X" secondAttribute="bottom" constant="8" id="wvk-dN-O4b"/>
+                            <constraint firstItem="vJm-v5-QDh" firstAttribute="leading" secondItem="zcb-fO-Aec" secondAttribute="trailing" constant="8" id="ya5-1Y-LBG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="今日外汇牌价" id="Cbv-ng-Juc">
+                        <barButtonItem key="rightBarButtonItem" image="shuaxin.png" id="qcr-iA-EfB">
+                            <connections>
+                                <action selector="reloadData:" destination="BYZ-38-t0r" id="mhX-78-srr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bankBtn" destination="dvR-XI-RbO" id="yGd-mV-o9n"/>
+                        <outlet property="countryName" destination="0ie-Ql-zpS" id="JqQ-BM-gT9"/>
+                        <outlet property="dateLabel" destination="FkN-Hl-xmz" id="XE9-Ld-eU8"/>
+                        <outlet property="mBuy" destination="TGT-4E-86X" id="6zx-8P-tM8"/>
+                        <outlet property="mSell" destination="JXZ-bQ-oGY" id="Ybv-88-eiM"/>
+                        <outlet property="midPrice" destination="2Xq-5q-bvx" id="fKG-OZ-VR0"/>
+                        <outlet property="pBuy" destination="vJm-v5-QDh" id="9Pi-eY-uv6"/>
+                        <outlet property="pSell" destination="w3t-ck-kMs" id="udX-bx-TDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="106.59670164917542"/>
+        </scene>
+        <!--实时价格-->
+        <scene sceneID="bWO-GI-kDk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TpN-KM-rqT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="实时价格" image="zoushi.png" id="IO4-mD-nWH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Smv-lR-H91">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jSY-GZ-i8C" kind="relationship" relationship="rootViewController" id="ljg-Ys-c3K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERO-IS-rrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="-548.27586206896558"/>
+        </scene>
+        <!--市场实时价格-->
+        <scene sceneID="z54-CD-xWK">
+            <objects>
+                <viewController id="jSY-GZ-i8C" customClass="priceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zwZ-nq-92c"/>
+                        <viewControllerLayoutGuide type="bottom" id="G2l-JC-zkU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iBh-IY-bYY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="市场实时价格" id="62F-Tk-eTZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZX-0M-Une" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="-547"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5BZ-Dg-llw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LgO-79-w8J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="tM3-Du-NnH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TpN-KM-rqT" kind="relationship" relationship="viewControllers" id="y83-mP-7td"/>
+                        <segue destination="xjo-iE-9d8" kind="relationship" relationship="viewControllers" id="PaS-8e-6vp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSs-N9-Spz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-105"/>
+        </scene>
+        <!--外汇牌价-->
+        <scene sceneID="IuH-gc-E3U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xjo-iE-9d8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="外汇牌价" image="jiage.png" id="woH-55-fam"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="obi-fF-djo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LaF-73-2qW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLS-OC-5Hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jiage.png" width="32" height="32"/>
+        <image name="shuaxin.png" width="25" height="25"/>
+        <image name="zoushi.png" width="32" height="32"/>
+    </resources>
+</document>
