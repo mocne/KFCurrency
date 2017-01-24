@@ -16,6 +16,8 @@
 		8F5FF6241E3265FA00E0543E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5FF6191E3265FA00E0543E /* AFURLRequestSerialization.m */; };
 		8F5FF6251E3265FA00E0543E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5FF61B1E3265FA00E0543E /* AFURLResponseSerialization.m */; };
 		8F5FF6261E3265FA00E0543E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5FF61D1E3265FA00E0543E /* AFURLSessionManager.m */; };
+		8F9AF5801E36FBFD00946999 /* myTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9AF57F1E36FBFD00946999 /* myTableViewCell.m */; };
+		8F9AF5831E36FD3400946999 /* Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9AF5821E36FD3400946999 /* Symbol.m */; };
 		8FAEBC761E331FB100FB232B /* shuaxin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAEBC751E331FB100FB232B /* shuaxin.png */; };
 		8FAEBC791E33297100FB232B /* bankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAEBC781E33297100FB232B /* bankViewController.m */; };
 		8FAEBC7D1E33397400FB232B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAEBC7C1E33397400FB232B /* icon.png */; };
@@ -51,6 +53,10 @@
 		8F5FF61B1E3265FA00E0543E /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		8F5FF61C1E3265FA00E0543E /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		8F5FF61D1E3265FA00E0543E /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		8F9AF57E1E36FBFD00946999 /* myTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewCell.h; sourceTree = "<group>"; };
+		8F9AF57F1E36FBFD00946999 /* myTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewCell.m; sourceTree = "<group>"; };
+		8F9AF5811E36FD3400946999 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		8F9AF5821E36FD3400946999 /* Symbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symbol.m; sourceTree = "<group>"; };
 		8FAEBC751E331FB100FB232B /* shuaxin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuaxin.png; sourceTree = "<group>"; };
 		8FAEBC771E33297100FB232B /* bankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bankViewController.h; sourceTree = "<group>"; };
 		8FAEBC781E33297100FB232B /* bankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bankViewController.m; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 		8F5FF6071E32656C00E0543E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8F9AF57E1E36FBFD00946999 /* myTableViewCell.h */,
+				8F9AF57F1E36FBFD00946999 /* myTableViewCell.m */,
+				8F9AF5811E36FD3400946999 /* Symbol.h */,
+				8F9AF5821E36FD3400946999 /* Symbol.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,8 +290,10 @@
 				8F5FF6231E3265FA00E0543E /* AFURLConnectionOperation.m in Sources */,
 				8F5FF61E1E3265FA00E0543E /* AFHTTPRequestOperation.m in Sources */,
 				8F5FF6211E3265FA00E0543E /* AFNetworkReachabilityManager.m in Sources */,
+				8F9AF5831E36FD3400946999 /* Symbol.m in Sources */,
 				8F5FF6261E3265FA00E0543E /* AFURLSessionManager.m in Sources */,
 				8F5FF6241E3265FA00E0543E /* AFURLRequestSerialization.m in Sources */,
+				8F9AF5801E36FBFD00946999 /* myTableViewCell.m in Sources */,
 				8FC32CD91E3259A50088C422 /* currencyViewController.m in Sources */,
 				8F5FF6251E3265FA00E0543E /* AFURLResponseSerialization.m in Sources */,
 				8FC32CE21E325B2B0088C422 /* quotationViewController.m in Sources */,

@@ -101,10 +101,10 @@
         NSDictionary *temp = responseObject;
 
         _dataArray = temp[@"result"];
-        NSDictionary *dict = _dataArray[0];
+//        NSDictionary *dict = _dataArray[0];
 
         for (int i = 0; i < _bankArr.count; i++) {
-            NSString *keyName = [NSString stringWithFormat:@"data%d",i+1];
+//            NSString *keyName = [NSString stringWithFormat:@"data%d",i+1];
 
             
 
